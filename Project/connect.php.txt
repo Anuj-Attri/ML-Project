@@ -1,0 +1,20 @@
+<?php
+$Fname = $_POST['Fname'];
+$Lname = $_POST['Lname'];
+$Number = $_POST['Number'];
+$email = $_POST['email'];
+$Password = $_POST['Password'];
+
+$conn = new mysqli('localhost','root','','form');
+if($conn->connect_error){
+die('Connection Failed : '.$conn->connect_error);
+}else{
+$stmt = $conn->prepare("insert into registration(Fname, Lname, Number, email, Password)
+values(?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("sssssi",$Fname, $Lname, $Number, $email, $Password);
+$stmt->execute();
+echo "Registrataion Successfully...";
+$stmt->close();
+$conn->close();
+}
+?>

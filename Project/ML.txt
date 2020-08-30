@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Happiness Website</title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<form>
+<div class="container">
+
+
+<form method="POST" action="connect.php">
+<table>
+
+<tr>
+<td>
+Fname :
+</td>
+<td>
+<input type="text" placeholder="Front" name="FName"
+</td>
+</tr>
+
+<tr>
+<td>
+Lname:
+</td>
+<td>
+<input type="text" placeholder="End" name="LName"
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+Number:
+</td>
+<td>
+<input type="text" placeholder="9112345678" name="Number"
+</td>
+</tr>
+
+<tr>
+<td>
+email :
+</td>
+<td>
+<input type="mail" placeholder="Email" name="email">
+</td>
+</tr>
+
+<tr>
+<td>
+Password :
+</td>
+<td>
+<input type="Password" placeholder="******" name="Password"
+</td>
+</tr>
+
+<td>
+
+</td>
+<td>
+<button type="button">Submit</button>
+</td>
+</tr>
+
+
+</table>
+</form>
+
+</div>
+</form>
+</body>
+</html>
